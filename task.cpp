@@ -8,7 +8,7 @@
 
 int main() {
     std::cout
-            << "Hello. Welcome to my calc. Please, enter your math problem\nYou're able to use +, -, *, /, ^, cos, sin, tan, ctg, exp\nYour math problem:";
+            << "Hello. Welcome to my calc. Please, enter your math problem\nYou're able to use +, -, *, /, ^, (, ), cos, sin, tan, ctg, exp\nYour math problem:";
     std::string ex;    ///Наш пример3-
     std::cin >> ex;     ///Вводим исходную строку
     std::string test;

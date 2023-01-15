@@ -6,13 +6,15 @@
 #include <string>
 #include "header.hpp"
 
-int main(){
-    std::string ex;    ///Наш пример
-    std::cin >> ex;     ///Вводим исходную строку   (sin(30)+1.5)^(16/4+0.5^-2)
+int main() {
+    std::cout
+            << "Hello. Welcome to my calc. Please, enter your math problem\nYou're able to use +, -, *, /, ^, cos, sin, tan, ctg, exp\nYour math problem:";
+    std::string ex;    ///Наш пример3-
+    std::cin >> ex;     ///Вводим исходную строку
     std::string test;
     test = check_and_fix(ex);    ///проверяем на ошибки
     std::cout << test;
-    if (test == "Incorrect input!"){
+    if (test == "Incorrect input!") {
         return 0;
     }
     func(ex);       ///Проверяем пример на вшивость (тригонометрию) и решаем ее если потребуется (func.cpp)
